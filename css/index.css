@@ -319,7 +319,21 @@ body{
 }
 .Programs-a{}
 
-
+@media(max-width:1024px){
+    .Programs-container{
+        width: 100%;
+        gap: 5rem;
+    }
+    .Programs-row{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .Programs-h3{
+        max-width: 100%;
+    }
+}
 
 .Main-maps{}
 .Maps{
