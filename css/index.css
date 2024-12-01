@@ -238,7 +238,7 @@ body{
 }
 .Names-li{
     /* background-color: aquamarine; */
-    font-size: 50px;
+    font-size: 3.125rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -251,6 +251,27 @@ body{
     height: 5px;
     background-color: black;
 
+}
+
+@media(max-width:768px){
+    .Names-ul{
+        flex-flow: column nowrap;
+    }
+    .Names-li{
+        font-size: 2.8125rem;
+    }
+    .Names-li::after{
+        display: none;
+    }
+    .Names-a{
+        text-align: center;
+    }
+}
+
+@media(max-width:600px){
+    .Names-li{
+        font-size: 2.375rem;
+    }
 }
 
 .Main-programs{}
