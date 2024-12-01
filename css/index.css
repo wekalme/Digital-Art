@@ -110,3 +110,54 @@ form , input , button , select , option , textarea{
     height: .125rem;
     background-color: black;
 }
+
+.Main-hightlights{}
+.Highlights{
+    background-color: yellow;
+    padding: 5% 0;
+}
+
+.Highlights-h2{
+    background-color: green;
+    font-size: 2.375rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.Highlights-columnas{
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.Columnas-section{
+    background-color: lightsalmon;
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.Columnas-img{
+    background-color: lightgrey;
+    width: 100%;
+    min-height: 70vh;
+}
+.Columnas-ask{
+    min-height: 40vh;
+}
+.Columnas-h3{
+    background-color: pink;
+    font-size: 1.6875rem;
+
+}
+.Columnas-span{
+    background-color: lime;
+    font-size: 1rem;
+    padding-bottom: .3rem;
+    border-bottom: 2px solid black;
+}
