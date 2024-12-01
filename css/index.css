@@ -30,6 +30,16 @@ form , input , button , select , option , textarea{
     background-color: transparent;
     appearance: none;
 }
+body{
+    font-family: "Krona One", sans-serif;
+    text-transform:lowercase;
+}
+.Wrapper{
+    width: 90%;
+    background-color: bisque;
+    margin: auto;
+}
+
 .Header{
     /* background-color: pink; */
 }
