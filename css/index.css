@@ -392,6 +392,7 @@ body{
 }
 .Footer-wrapper{
     /* background-color: darkblue; */
+    width: 90%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -425,6 +426,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+    width: 100%;
 }
 .Footer-li{
     font-size: 1.25rem;
@@ -434,12 +436,14 @@ body{
 .Form{
     /* background-color: darkgreen; */
     position: relative;
+    width: 100%;
 }
 .Form-input{
     /* background-color: darkkhaki; */
     padding-bottom: 1rem;
     border-bottom: 2px solid white;
     font-size: .9375rem;
+    width: 100%;
 }
 .Form-input::placeholder{
     color: white;
@@ -470,4 +474,13 @@ body{
 .Rrss-svg{
     width: 1.5rem;
     color: white;
+}
+
+@media(max-width:1024px){
+    .Footer-wrapper{
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3.5rem;
+    }
 }
