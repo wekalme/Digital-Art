@@ -36,6 +36,7 @@ body{
     background-image: url(../assets/img/fondo-brillo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 }
 .Wrapper{
     width: 90%;
@@ -45,6 +46,11 @@ body{
 
 .Header{
     /* background-color: pink; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.671);
 }
 .Header-wrapper{
     /* background-color: lightgreen; */
@@ -61,11 +67,16 @@ body{
     width: 2rem;
     display: none;
 }
-.Header-logo{}
+.Header-logo{
+    width: auto;
+}
 .Header-a{}
 .Header-img{}
 .Header-nav{
     /* background-color: lightsalmon; */
+}
+.Header-nav.isActive{
+    display: block;
 }
 .Header-ul{
     display: flex;
@@ -109,11 +120,24 @@ body{
 }
 
 @media(max-width:1024px){
+    .Header-wrapper{
+        position: relative;
+
+    }
     .Header-svg{
         display: block;
     }
     .Header-nav{
         display: none;
+        position: absolute;
+        top: 100%;
+        width: 90%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.877);
+        padding: 5%;
+    }
+    .Header-ul{
+        flex-flow: column wrap;
     }
 }
 @media(max-width:500px){
