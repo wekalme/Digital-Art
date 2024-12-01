@@ -126,6 +126,7 @@ body{
     }
     .Header-svg{
         display: block;
+        cursor: pointer;
     }
     .Header-nav{
         display: none;
