@@ -33,6 +33,9 @@ form , input , button , select , option , textarea{
 body{
     font-family: "Krona One", sans-serif;
     text-transform:lowercase;
+    background-image: url(../assets/img/fondo-brillo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .Wrapper{
     width: 90%;
@@ -53,6 +56,10 @@ body{
 }
 .Header-left{
     /* background-color:lightblue; */
+}
+.Header-svg{
+    width: 2rem;
+    display: none;
 }
 .Header-logo{}
 .Header-a{}
@@ -79,6 +86,20 @@ body{
 }
 .Header-link{
     /* background-color: purple; */
+}
+
+@media(max-width:1024px){
+    .Header-svg{
+        display: block;
+    }
+    .Header-nav{
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .Header-right{
+        display: none;
+    }
 }
 
 .Main{
@@ -310,7 +331,7 @@ body{
     border-bottom: 2px solid black;
 }
 .Maps-img{
-    /* background-color: lightgrey; */
+    background-color: lightgrey;
     width: 100%;
     min-height: 60vh;
     object-fit: cover;
