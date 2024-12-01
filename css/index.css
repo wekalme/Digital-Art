@@ -141,10 +141,11 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
+    width: 100%;
 }
 .Columnas-section{
     /* background-color: lightsalmon; */
-    width: 100%;
+    width: calc(100% / 3);
     padding: 5% 0;
     display: flex;
     flex-flow: column nowrap;
@@ -206,4 +207,72 @@ body{
     height: 5px;
     background-color: black;
 
+}
+
+.Main-programs{}
+.Programs{
+    /* background-color: pink; */
+    width: 100%;
+    padding: 10% 0;
+}
+
+.Programs-h2{
+        /* background-color: green; */
+        font-size: 2.375rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid black;
+
+}
+.Programs-container{
+    /* background-color: azure; */
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Programs-row{
+    width: 100%;
+    /* background-color: lavender;     */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.Programs-schedule{
+    /* background-color: lime; */
+  
+    font-size: 1.25rem;
+    max-width: 12rem;
+
+    
+}
+.Programs-span{
+    /* background-color: blue; */
+}
+
+.Programs-h3{
+    /* background-color: green; */
+    font-size: 1.6875rem;
+    max-width: 40%;
+    text-align: left;
+    font-weight: 400;
+
+
+}
+.Programs-btn{
+    /* background-color: orange; */
+    display: block;
+    padding: 1rem 2rem;
+    border: 2px solid black;
+
+}
+.Programs-a{
+    
 }
