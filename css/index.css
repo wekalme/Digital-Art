@@ -123,19 +123,19 @@ body{
 
 .Main-hightlights{}
 .Highlights{
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 5% 0;
 }
 
 .Highlights-h2{
-    background-color: green;
+    /* background-color: green; */
     font-size: 2.375rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
 }
 
 .Highlights-columnas{
-    background-color: orange;
+    /* background-color: orange; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -143,7 +143,7 @@ body{
     gap: 2rem;
 }
 .Columnas-section{
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     width: 100%;
     padding: 5% 0;
     display: flex;
@@ -161,13 +161,49 @@ body{
     min-height: 40vh;
 }
 .Columnas-h3{
-    background-color: pink;
+    /* background-color: pink; */
     font-size: 1.6875rem;
 
 }
 .Columnas-span{
-    background-color: lime;
+    /* background-color: lime; */
     font-size: 1rem;
     padding-bottom: .3rem;
     border-bottom: 2px solid black;
+}
+
+.Main-names{}
+.Names{
+    background-image: url(../assets/img/fondo-names.png);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+.Names-ul{
+    /* background-color: lightpink; */
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.Names-li{
+    /* background-color: aquamarine; */
+    font-size: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Names-li::after{
+    content:'';
+    width: 5vw;
+    height: 5px;
+    background-color: black;
+
 }
