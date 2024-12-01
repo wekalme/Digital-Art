@@ -96,7 +96,7 @@ body{
         display: none;
     }
 }
-@media(max-width:1024px){
+@media(max-width:500px){
     .Header-right{
         display: none;
     }
@@ -104,6 +104,7 @@ body{
 
 .Main{
     /* background-color: lightyellow; */
+    width: 100%;
 }
 .Main-wrapper{
     /* background-color: azure; */
@@ -153,6 +154,7 @@ body{
     font-size: 2.375rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
+    font-weight: 400;
 }
 
 .Highlights-columnas{
@@ -177,7 +179,7 @@ body{
 .Columnas-img{
     /* background-color: lightgrey; */
     width: 100%;
-    min-height: 70vh;
+    min-height: auto;
     object-fit: cover;
 }
 .Columnas-ask{
@@ -186,6 +188,7 @@ body{
 .Columnas-h3{
     /* background-color: pink; */
     font-size: 1.6875rem;
+    font-weight: 400;;
 
 }
 .Columnas-span{
@@ -195,6 +198,25 @@ body{
     border-bottom: 2px solid black;
 }
 
+@media(max-width:1024px){
+    .Highlights-columnas{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Columnas-section{
+        width: 60%;
+    }
+}
+
+@media(max-width:700px){
+    .Columnas-section{
+        width: 100%;
+    }
+    .Columnas-img{
+        min-height: auto;
+    }
+}
 .Main-names{}
 .Names{
     background-image: url(../assets/img/fondo-names.png);
@@ -296,6 +318,8 @@ body{
 
 }
 .Programs-a{}
+
+
 
 .Main-maps{}
 .Maps{
