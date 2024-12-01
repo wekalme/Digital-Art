@@ -70,3 +70,43 @@ form , input , button , select , option , textarea{
 .Header-link{
     /* background-color: purple; */
 }
+
+.Main{
+    background-color: lightyellow;
+}
+.Main-wrapper{
+    background-color: azure;
+}
+.Main-digital{
+}
+.Digital{
+    /* background-color: lightblue; */
+}
+.Digital-h1{
+    /* background-color: lavender; */
+    font-size: 12vw;
+    padding: 2rem 0 ;
+}
+.Digital-dates{
+    /* background-color: lavenderblush; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap:.5rem;
+}
+.Digital-span{
+    /* background-color: lightyellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.Digital-span:nth-child(2)::before{
+    content: '';
+    width: 2.5rem;
+    height: .125rem;
+    background-color: black;
+}
